@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: redis
-        image: public.ecr.aws/prima/redis:6.2.5-3
+        image: ghcr.io/depontimatteo/redis:6.2
         imagePullPolicy: Always
         args: ["--requirepass", "$(REDIS_PASS)"]
         resources:
